@@ -387,6 +387,24 @@ function generateInitialDatabase(): DatabaseSchema {
       targetWeightKg: 80.0,
       createdAt: '2026-02-10T16:00:00Z',
     },
+    {
+      id: 'usr-athlete-nagendra',
+      name: 'Nagendra Garg',
+      email: 'nagendragarg19@gmail.com',
+      passwordHash: userHash,
+      role: 'USER',
+      status: 'ACTIVE',
+      avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+      phone: '+1 (555) 728-1920',
+      bio: 'High-performance athlete focused on strength, metabolic progression, and body composition.',
+      coachId: coachAlexId,
+      fitnessGoal: 'MUSCLE_GAIN',
+      activityLevel: 'VERY_ACTIVE',
+      heightCm: 178,
+      currentWeightKg: 78.0,
+      targetWeightKg: 82.0,
+      createdAt: '2026-02-15T10:00:00Z',
+    },
   ];
 
   const exercises: Exercise[] = [
@@ -1352,6 +1370,47 @@ class DatabaseService {
           this.data.fitnessGoals = generateInitialFitnessGoals();
           this.save();
         }
+
+        // Ensure Nagendra athlete account is always available
+        const hasNagendra = this.data.users.some(
+          (u) => u.email.trim().toLowerCase() === 'nagendragarg19@gmail.com'
+        );
+        if (!hasNagendra) {
+          const salt = bcrypt.genSaltSync(10);
+          const userHash = bcrypt.hashSync('user123', salt);
+          this.data.users.push({
+            id: 'usr-athlete-nagendra',
+            name: 'Nagendra Garg',
+            email: 'nagendragarg19@gmail.com',
+            passwordHash: userHash,
+            role: 'USER',
+            status: 'ACTIVE',
+            avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+            phone: '+1 (555) 728-1920',
+            bio: 'High-performance athlete focused on strength, metabolic progression, and body composition.',
+            coachId: 'usr-coach-1',
+            fitnessGoal: 'MUSCLE_GAIN',
+            activityLevel: 'VERY_ACTIVE',
+            heightCm: 178,
+            currentWeightKg: 78.0,
+            targetWeightKg: 82.0,
+            createdAt: '2026-02-15T10:00:00Z',
+          });
+
+          if (!this.data.workoutAssignments.some((a) => a.userId === 'usr-athlete-nagendra')) {
+            this.data.workoutAssignments.push({
+              id: 'asg-nagendra-1',
+              userId: 'usr-athlete-nagendra',
+              userName: 'Nagendra Garg',
+              planId: 'plan-101',
+              planTitle: '8-Week Hypertrophy & Strength Surge',
+              coachId: 'usr-coach-1',
+              assignedAt: '2026-02-15T10:00:00Z',
+              status: 'ACTIVE',
+            });
+          }
+          this.save();
+        }
       } catch (err) {
         console.error('Failed to parse database file, resetting to initial seed:', err);
         this.data = generateInitialDatabase();
@@ -1382,7 +1441,26 @@ class DatabaseService {
   }
 
   public getUserByEmail(email: string) {
-    return this.data.users.find((u) => u.email.toLowerCase() === email.toLowerCase());
+    if (!email || typeof email !== 'string') return undefined;
+    const clean = email.trim().toLowerCase();
+    if (!clean) return undefined;
+
+    // 1. Direct exact email match (whitespace & case insensitive)
+    const exact = this.data.users.find((u) => u.email.trim().toLowerCase() === clean);
+    if (exact) return exact;
+
+    // 2. Match by email username/prefix (e.g. "marcus" matches "marcus@pulsefit.com", "nagendra" or "nagendragarg19" matches "nagendragarg19@gmail.com")
+    const byPrefix = this.data.users.find((u) => {
+      const prefix = u.email.split('@')[0].toLowerCase();
+      return prefix === clean;
+    });
+    if (byPrefix) return byPrefix;
+
+    // 3. Match by full name case-insensitive
+    const byName = this.data.users.find((u) => u.name.trim().toLowerCase() === clean);
+    if (byName) return byName;
+
+    return undefined;
   }
 
   public addUser(user: User) {

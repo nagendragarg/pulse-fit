@@ -125,6 +125,39 @@
       "currentWeightKg": 76,
       "targetWeightKg": 80,
       "createdAt": "2026-02-10T16:00:00Z"
+    },
+    {
+      "id": "usr-athlete-nagendra",
+      "name": "Nagendra Garg",
+      "email": "nagendragarg19@gmail.com",
+      "passwordHash": "$2b$10$/fbUKxzwHB6F6VcGcGCAZOfQPSaXR4pIWhem0zBUZFUUNHD/4yoBq",
+      "role": "USER",
+      "status": "ACTIVE",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "phone": "+1 (555) 728-1920",
+      "bio": "High-performance athlete focused on strength, metabolic progression, and body composition.",
+      "coachId": "usr-coach-1",
+      "fitnessGoal": "MUSCLE_GAIN",
+      "activityLevel": "VERY_ACTIVE",
+      "heightCm": 178,
+      "currentWeightKg": 78,
+      "targetWeightKg": 82,
+      "createdAt": "2026-02-15T10:00:00Z"
+    },
+    {
+      "id": "usr-athlete-1792075793725",
+      "name": "New Athlete",
+      "email": "brandnew@test.com",
+      "passwordHash": "$2b$10$IPoeiGS7I4MQOU04vgwOm.UvseBNpWK5gyGpzUKYfAgefz3oUIia.",
+      "role": "USER",
+      "status": "ACTIVE",
+      "coachId": "usr-coach-1",
+      "fitnessGoal": "MUSCLE_GAIN",
+      "activityLevel": "VERY_ACTIVE",
+      "heightCm": 178,
+      "currentWeightKg": 75,
+      "targetWeightKg": 80,
+      "createdAt": "2026-10-15T14:49:53.849Z"
     }
   ],
   "exercises": [
@@ -572,6 +605,26 @@
       "planTitle": "8-Week Hypertrophy & Strength Surge",
       "coachId": "usr-coach-1",
       "assignedAt": "2026-02-02T10:00:00Z",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "asg-nagendra-1",
+      "userId": "usr-athlete-nagendra",
+      "userName": "Nagendra Garg",
+      "planId": "plan-101",
+      "planTitle": "8-Week Hypertrophy & Strength Surge",
+      "coachId": "usr-coach-1",
+      "assignedAt": "2026-02-15T10:00:00Z",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "asg-1792075793850",
+      "userId": "usr-athlete-1792075793725",
+      "userName": "New Athlete",
+      "planId": "plan-101",
+      "planTitle": "8-Week Hypertrophy & Strength Surge",
+      "coachId": "usr-coach-1",
+      "assignedAt": "2026-10-15T14:49:53.850Z",
       "status": "ACTIVE"
     }
   ],

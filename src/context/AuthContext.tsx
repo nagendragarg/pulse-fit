@@ -45,12 +45,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const login = async (email: string, password: string, expectedRole?: UserRole): Promise<User> => {
+    const cleanEmail = String(email).trim().toLowerCase();
     const data = await api.post<{ token: string; user: User }>('/auth/login', {
-      email,
+      email: cleanEmail,
       password,
       expectedRole,
     });
     localStorage.setItem('pulsefit_token', data.token);
+    if (data.user.role === 'USER') {
+      localStorage.setItem('pulsefit_last_athlete_email', cleanEmail);
+    }
     setToken(data.token);
     setUser(data.user);
     return data.user;

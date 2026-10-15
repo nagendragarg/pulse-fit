@@ -25,11 +25,12 @@ export const AdminLoginPage: React.FC<AdminLoginPageProps> = ({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email || !password) return;
+    const cleanEmail = email.trim().toLowerCase();
+    if (!cleanEmail || !password) return;
 
     setIsLoading(true);
     try {
-      const loggedUser = await login(email, password, 'ADMIN');
+      const loggedUser = await login(cleanEmail, password, 'ADMIN');
       success(`Security clearance verified: Welcome ${loggedUser.name}!`, 'Admin Clearance Granted');
     } catch (err: any) {
       error(err.message || 'Invalid administrator security credentials.', 'Admin Login Error');

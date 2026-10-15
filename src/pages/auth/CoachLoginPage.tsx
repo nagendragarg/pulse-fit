@@ -25,11 +25,12 @@ export const CoachLoginPage: React.FC<CoachLoginPageProps> = ({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email || !password) return;
+    const cleanEmail = email.trim().toLowerCase();
+    if (!cleanEmail || !password) return;
 
     setIsLoading(true);
     try {
-      const loggedUser = await login(email, password, 'COACH');
+      const loggedUser = await login(cleanEmail, password, 'COACH');
       success(`Welcome Coach ${loggedUser.name}!`, 'Coach Portal Active');
     } catch (err: any) {
       error(err.message || 'Invalid credentials for Coach Portal.', 'Coach Login Error');

@@ -25,7 +25,9 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onSwitchToLogin, onB
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name || !email || !password) return;
+    const cleanName = name.trim();
+    const cleanEmail = email.trim().toLowerCase();
+    if (!cleanName || !cleanEmail || !password) return;
 
     if (password.length < 6) {
       error('Password must be at least 6 characters.', 'Validation');
@@ -35,8 +37,8 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onSwitchToLogin, onB
     setIsLoading(true);
     try {
       const user = await register({
-        name,
-        email,
+        name: cleanName,
+        email: cleanEmail,
         password,
         role,
         fitnessGoal,
@@ -45,6 +47,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onSwitchToLogin, onB
         targetWeightKg,
       });
 
+      localStorage.setItem('pulsefit_last_athlete_email', cleanEmail);
       success(`Welcome to PulseFit, ${user.name}! Your account is active.`, 'Registered Successfully');
     } catch (err: any) {
       error(err.message || 'Registration failed', 'Error');

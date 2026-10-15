@@ -18,6 +18,10 @@ export const LoginPage: React.FC<LoginPageProps> = ({
 }) => {
   const [activePortal, setActivePortal] = useState<LoginPortalType>(initialPortal);
 
+  React.useEffect(() => {
+    setActivePortal(initialPortal);
+  }, [initialPortal]);
+
   if (activePortal === 'COACH') {
     return (
       <CoachLoginPage
