@@ -81,44 +81,44 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({ onNavigateTab, onS
   return (
     <div className="space-y-6">
       {/* Welcome Banner */}
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-zinc-900 via-zinc-900/95 to-emerald-950/40 border border-zinc-800 p-6 sm:p-8">
+      <div className="relative overflow-hidden rounded-3xl bg-zinc-950 border border-zinc-800/90 p-6 sm:p-8 shadow-xl">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
           {/* Left Text & Actions */}
           <div className="max-w-2xl relative z-10">
-            <div className="flex flex-wrap items-center gap-2 mb-3">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold">
-                <Flame className="w-3.5 h-3.5" />
-                <span>Active Training Microcycle</span>
-              </div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="text-[11px] font-mono font-bold uppercase tracking-widest text-emerald-400">
+                Active Training Microcycle
+              </span>
             </div>
 
             <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
               Ready to train, {user?.name}?
             </h1>
-            <p className="text-xs sm:text-sm text-zinc-300 mt-2 leading-relaxed">
+            <p className="text-xs sm:text-sm text-zinc-400 mt-2 leading-relaxed">
               {plan
                 ? `You are currently executing the "${plan.title}" program. Focus on progressive overload and hitting your daily protein targets.`
                 : 'Choose a workout plan to begin your customized progression journey with your coach.'}
             </p>
 
-            <div className="flex flex-wrap items-center gap-3 mt-6">
+            <div className="flex flex-wrap items-center gap-2.5 mt-6">
               {todaysRoutine && (
                 <button
                   onClick={() => onStartRoutine(todaysRoutine.id)}
-                  className="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black text-xs sm:text-sm font-bold transition-all shadow-lg shadow-emerald-500/20 flex items-center gap-2"
+                  className="px-5 py-2.5 rounded-xl bg-emerald-400 hover:bg-emerald-300 text-black text-xs sm:text-sm font-bold transition-all shadow-md shadow-emerald-400/20 flex items-center gap-2"
                 >
                   <PlayCircle className="w-4 h-4" /> Start Today's Session
                 </button>
               )}
               <button
                 onClick={() => onNavigateTab('nutrition')}
-                className="px-4 py-2.5 rounded-xl bg-zinc-800/80 hover:bg-zinc-750 border border-zinc-700/60 text-white text-xs sm:text-sm font-medium transition-colors flex items-center gap-2"
+                className="px-4 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-850 border border-zinc-750 text-zinc-200 text-xs sm:text-sm font-semibold transition-colors flex items-center gap-2"
               >
                 <Apple className="w-4 h-4 text-emerald-400" /> Log Daily Meal
               </button>
               <button
                 onClick={() => onNavigateTab('workout-plans')}
-                className="px-4 py-2.5 rounded-xl bg-zinc-800/80 hover:bg-zinc-750 border border-zinc-700/60 text-zinc-300 hover:text-white text-xs sm:text-sm font-medium transition-colors flex items-center gap-2"
+                className="px-4 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-850 border border-zinc-750 text-zinc-300 hover:text-white text-xs sm:text-sm font-semibold transition-colors flex items-center gap-2"
               >
                 <Dumbbell className="w-4 h-4 text-zinc-400" /> View Workout Plans
               </button>
@@ -217,7 +217,7 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({ onNavigateTab, onS
                     <Video className="w-3.5 h-3.5" /> Watch AI Videos
                   </button>
                 )}
-                <span className="text-xs px-2.5 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 font-medium">
+                <span className="text-xs font-mono font-medium text-zinc-400">
                   {plan?.difficulty || 'Intermediate'}
                 </span>
               </div>
@@ -305,7 +305,8 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({ onNavigateTab, onS
           <div className="p-6 rounded-3xl bg-zinc-950 border border-zinc-800">
             <div className="flex items-center justify-between mb-4">
               <span className="text-xs font-bold text-cyan-400 uppercase tracking-wider">Your Coach</span>
-              <span className="text-[10px] px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 font-bold border border-cyan-500/20">
+              <span className="text-[11px] font-mono font-medium text-cyan-400 flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
                 Active
               </span>
             </div>
