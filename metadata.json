@@ -1,0 +1,6 @@
+{
+  "name": "PulseFit - Online Fitness Coaching Platform",
+  "description": "Production-grade online fitness coaching platform connecting athletes and coaches with custom workout builders, real-time messaging, BMI & nutritional analytics, and admin moderation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

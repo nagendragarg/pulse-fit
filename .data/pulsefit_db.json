@@ -1,0 +1,1234 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-1",
+      "name": "Jane Sterling",
+      "email": "admin@pulsefit.com",
+      "passwordHash": "$2b$10$Qi0K9qVGzPtplB.DrRLmbuWH/HCJtm6UMdiAuJEABS88d4e.2DYd2",
+      "role": "ADMIN",
+      "status": "ACTIVE",
+      "avatarUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+      "phone": "+1 (555) 019-2831",
+      "bio": "Head of Operations & Platform Governance at PulseFit.",
+      "createdAt": "2026-01-01T08:00:00Z"
+    },
+    {
+      "id": "usr-coach-1",
+      "name": "Alex Morgan, CSCS",
+      "email": "coach.alex@pulsefit.com",
+      "passwordHash": "$2b$10$Qi0K9qVGzPtplB.DrRLmbut/IW2lvFsHD.aazZ2WVyX69HuXxWUOG",
+      "role": "COACH",
+      "status": "ACTIVE",
+      "avatarUrl": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=150&auto=format&fit=crop&q=80",
+      "phone": "+1 (555) 432-8819",
+      "bio": "Elite Strength & Conditioning Coach. Specializing in progressive overload and athletic power development.",
+      "createdAt": "2026-01-05T09:00:00Z"
+    },
+    {
+      "id": "usr-coach-2",
+      "name": "Elena Vance, CPT",
+      "email": "coach.elena@pulsefit.com",
+      "passwordHash": "$2b$10$Qi0K9qVGzPtplB.DrRLmbut/IW2lvFsHD.aazZ2WVyX69HuXxWUOG",
+      "role": "COACH",
+      "status": "ACTIVE",
+      "avatarUrl": "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=150&auto=format&fit=crop&q=80",
+      "phone": "+1 (555) 912-7463",
+      "bio": "Functional movement specialist & endurance coach. Focus on longevity, mobility, and high-performance cardio.",
+      "createdAt": "2026-01-08T10:00:00Z"
+    },
+    {
+      "id": "usr-athlete-1",
+      "name": "Marcus Chen",
+      "email": "marcus@pulsefit.com",
+      "passwordHash": "$2b$10$Qi0K9qVGzPtplB.DrRLmbu8L0rh5kCInMAQ/rh0MNc2YgEgb9brP.",
+      "role": "USER",
+      "status": "ACTIVE",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "phone": "+1 (555) 302-9911",
+      "bio": "Dedicated athlete aiming for strength gains and lean muscle hypertrophy.",
+      "coachId": "usr-coach-1",
+      "fitnessGoal": "MUSCLE_GAIN",
+      "activityLevel": "VERY_ACTIVE",
+      "heightCm": 178,
+      "currentWeightKg": 78,
+      "targetWeightKg": 85,
+      "createdAt": "2026-01-15T11:00:00Z"
+    },
+    {
+      "id": "usr-athlete-2",
+      "name": "Sarah Jenkins",
+      "email": "sarah@pulsefit.com",
+      "passwordHash": "$2b$10$Qi0K9qVGzPtplB.DrRLmbu8L0rh5kCInMAQ/rh0MNc2YgEgb9brP.",
+      "role": "USER",
+      "status": "ACTIVE",
+      "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
+      "phone": "+1 (555) 812-4421",
+      "bio": "Marathon trainee working on stamina, metabolic health, and core stability.",
+      "coachId": "usr-coach-2",
+      "fitnessGoal": "ENDURANCE",
+      "activityLevel": "VERY_ACTIVE",
+      "heightCm": 168,
+      "currentWeightKg": 62,
+      "targetWeightKg": 60,
+      "createdAt": "2026-01-18T14:00:00Z"
+    },
+    {
+      "id": "usr-athlete-3",
+      "name": "David Rodriguez",
+      "email": "david@pulsefit.com",
+      "passwordHash": "$2b$10$Qi0K9qVGzPtplB.DrRLmbu8L0rh5kCInMAQ/rh0MNc2YgEgb9brP.",
+      "role": "USER",
+      "status": "ACTIVE",
+      "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+      "phone": "+1 (555) 673-1194",
+      "bio": "Working professional getting back into consistent weight training.",
+      "coachId": "usr-coach-1",
+      "fitnessGoal": "WEIGHT_LOSS",
+      "activityLevel": "MODERATE",
+      "heightCm": 175,
+      "currentWeightKg": 89.2,
+      "targetWeightKg": 80,
+      "createdAt": "2026-02-01T09:30:00Z"
+    },
+    {
+      "id": "usr-athlete-4",
+      "name": "Priya Sharma",
+      "email": "priya@pulsefit.com",
+      "passwordHash": "$2b$10$Qi0K9qVGzPtplB.DrRLmbu8L0rh5kCInMAQ/rh0MNc2YgEgb9brP.",
+      "role": "USER",
+      "status": "ACTIVE",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "phone": "+1 (555) 991-8843",
+      "bio": "Focusing on total body posture, strength and nutrition balance.",
+      "coachId": "usr-coach-2",
+      "fitnessGoal": "MAINTENANCE",
+      "activityLevel": "MODERATE",
+      "heightCm": 165,
+      "currentWeightKg": 58.5,
+      "targetWeightKg": 58,
+      "createdAt": "2026-02-05T12:00:00Z"
+    },
+    {
+      "id": "usr-athlete-5",
+      "name": "Jordan Taylor",
+      "email": "jordan@pulsefit.com",
+      "passwordHash": "$2b$10$Qi0K9qVGzPtplB.DrRLmbu8L0rh5kCInMAQ/rh0MNc2YgEgb9brP.",
+      "role": "USER",
+      "status": "ACTIVE",
+      "avatarUrl": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&auto=format&fit=crop&q=80",
+      "phone": "+1 (555) 441-2290",
+      "bio": "Cross-training enthusiast exploring functional power lifting.",
+      "coachId": "usr-coach-1",
+      "fitnessGoal": "MUSCLE_GAIN",
+      "activityLevel": "VERY_ACTIVE",
+      "heightCm": 179,
+      "currentWeightKg": 76,
+      "targetWeightKg": 80,
+      "createdAt": "2026-02-10T16:00:00Z"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ex-1",
+      "name": "Barbell Bench Press",
+      "muscleGroup": "Chest",
+      "equipment": "Barbell",
+      "description": "Compound horizontal pressing exercise for pectorals, front delts, and triceps.",
+      "instructions": "Lie on the bench, grip the bar slightly wider than shoulder-width, lower smoothly to mid-chest, and press explosively while driving heels into floor.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/rT7DgCr-3pg?autoplay=1&mute=1&loop=1&playlist=rT7DgCr-3pg&playsinline=1&controls=1&rel=0",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=400&auto=format&fit=crop&q=80",
+      "aiFormCues": [
+        "Retract and depress scapulae firmly against the bench pad.",
+        "Maintain a slight natural lumbar arch with glutes planted.",
+        "Elbows should tuck at approximately 45-60 degrees, not flared 90 degrees.",
+        "Drive through heels upon concentric ascent to generate leg drive."
+      ],
+      "commonMistakes": [
+        "Bouncing bar off the sternum",
+        "Flaring elbows 90 degrees risking rotator cuff impingement",
+        "Lifting glutes off the bench during heavy effort"
+      ]
+    },
+    {
+      "id": "ex-2",
+      "name": "Incline Dumbbell Press",
+      "muscleGroup": "Chest",
+      "equipment": "Dumbbell",
+      "description": "Targets upper clavicular head of the pectoralis major.",
+      "instructions": "Set bench to 30-45 degrees. Lower dumbbells until elbows are at roughly 90 degrees, press upward in a slight arc.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/8iPEnn-ltC8?autoplay=1&mute=1&loop=1&playlist=8iPEnn-ltC8&playsinline=1&controls=1&rel=0",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&auto=format&fit=crop&q=80",
+      "aiFormCues": [
+        "Keep wrists stacked directly over elbows throughout the press.",
+        "Converge dumbbells near top without clanging weights together.",
+        "Control the descent with a 3-second eccentric tempo."
+      ],
+      "commonMistakes": [
+        "Setting bench angle too steep (>45 deg) shifting work to anterior deltoids",
+        "Collapsing wrists backward"
+      ]
+    },
+    {
+      "id": "ex-3",
+      "name": "Triceps Rope Pushdown",
+      "muscleGroup": "Arms",
+      "equipment": "Cable",
+      "description": "Isolation exercise targeting all three heads of the triceps.",
+      "instructions": "Keep elbows tucked tightly at sides. Push down and flare rope outward at the bottom of the movement.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/2-LAMcpzODU?autoplay=1&mute=1&loop=1&playlist=2-LAMcpzODU&playsinline=1&controls=1&rel=0",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=400&auto=format&fit=crop&q=80",
+      "aiFormCues": [
+        "Pin elbows stationary to ribs, acting strictly as hinges.",
+        "Flare the rope outward at full extension for peak contraction.",
+        "Keep torso inclined roughly 10 degrees for consistent tension."
+      ],
+      "commonMistakes": [
+        "Using shoulder momentum to initiate the downward movement",
+        "Flaring elbows away from the torso"
+      ]
+    },
+    {
+      "id": "ex-4",
+      "name": "Barbell Back Squat",
+      "muscleGroup": "Legs",
+      "equipment": "Barbell",
+      "description": "Primary compound movement for quadriceps, glutes, and core stability.",
+      "instructions": "Rest bar on upper traps. Brace core, sit hips down and back until thighs reach parallel with floor, then drive up through midfoot.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/bEv6CCg2BC8?autoplay=1&mute=1&loop=1&playlist=bEv6CCg2BC8&playsinline=1&controls=1&rel=0",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&auto=format&fit=crop&q=80",
+      "aiFormCues": [
+        "Brace 360-degree intra-abdominal pressure (Valsalva) prior to descending.",
+        "Knees should track in line with middle toes.",
+        "Hit depth where hip crease is at or below the top of the knee.",
+        "Drive chest and hips up simultaneously out of the hole."
+      ],
+      "commonMistakes": [
+        "Knee valgus (knees caving inward) during ascent",
+        "Good-morning squat (hips shooting up before chest)",
+        "Heels lifting off the ground due to limited ankle dorsiflexion"
+      ]
+    },
+    {
+      "id": "ex-5",
+      "name": "Romanian Deadlift (RDL)",
+      "muscleGroup": "Legs",
+      "equipment": "Barbell",
+      "description": "Hip-hinge movement maximizing hamstring and glute hypertrophy.",
+      "instructions": "Slight knee bend, hinge at hips while keeping chest tall and spine neutral. Lower bar just below knees, squeeze glutes to stand.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/op9kVnSso6Q?autoplay=1&mute=1&loop=1&playlist=op9kVnSso6Q&playsinline=1&controls=1&rel=0",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=400&auto=format&fit=crop&q=80",
+      "aiFormCues": [
+        "Initiate the movement by pushing hips backward, not bending knees.",
+        "Keep the barbell in continuous contact with thighs and shins.",
+        "Maintain a neutral cervical spine (eyes focused 6-10 ft ahead)."
+      ],
+      "commonMistakes": [
+        "Rounding lumbar spine during the stretch",
+        "Turning the exercise into a standard squat with excessive knee flexion"
+      ]
+    },
+    {
+      "id": "ex-6",
+      "name": "Lat Pulldown",
+      "muscleGroup": "Back",
+      "equipment": "Cable",
+      "description": "Vertical pull for broad lats and upper back development.",
+      "instructions": "Grip bar wide, lean back slightly. Pull bar down toward upper chest while depressing and retracting shoulder blades.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/CAwf7n6Luuc?autoplay=1&mute=1&loop=1&playlist=CAwf7n6Luuc&playsinline=1&controls=1&rel=0",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=400&auto=format&fit=crop&q=80",
+      "aiFormCues": [
+        "Depress shoulder blades before pulling with elbows.",
+        "Drive elbows down and slightly inward toward back pockets.",
+        "Avoid excessive torso swing beyond 15 degrees backward lean."
+      ],
+      "commonMistakes": [
+        "Pulling the bar behind the neck putting extreme torque on shoulders",
+        "Using body momentum rather than lat contraction"
+      ]
+    },
+    {
+      "id": "ex-7",
+      "name": "Barbell Bent-Over Row",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "description": "Horizontal pull building back thickness, rhomboids, and rear delts.",
+      "instructions": "Hinge torso to roughly 45 degrees. Pull bar toward belly button, pause briefly, control descent.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/G8l_8chR5BE?autoplay=1&mute=1&loop=1&playlist=G8l_8chR5BE&playsinline=1&controls=1&rel=0",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=400&auto=format&fit=crop&q=80",
+      "aiFormCues": [
+        "Maintain isometric hamstring and glute brace to protect lower back.",
+        "Pull barbell into navel area, squeezing scapulae at the apex.",
+        "Control the eccentric lowering without dropping torso angle."
+      ],
+      "commonMistakes": [
+        "Jerking torso upward to heave the bar",
+        "Rounding upper and lower back under heavy load"
+      ]
+    },
+    {
+      "id": "ex-8",
+      "name": "Overhead Dumbbell Shoulder Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "description": "Vertical pressing movement for anterior and lateral deltoids.",
+      "instructions": "Sit upright with core tight. Press weights overhead until arms are extended, avoid overarching lower back.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/qEwKCR5JCog?autoplay=1&mute=1&loop=1&playlist=qEwKCR5JCog&playsinline=1&controls=1&rel=0",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=400&auto=format&fit=crop&q=80",
+      "aiFormCues": [
+        "Keep ribcage locked down to prevent lumbar extension.",
+        "Press dumbbells in a natural slight arc over the crown of head.",
+        "Maintain tension at the bottom—do not let elbows drop below 90 deg."
+      ],
+      "commonMistakes": [
+        "Arching lower back and turning it into an incline chest press",
+        "Banging weights together at lockout"
+      ]
+    },
+    {
+      "id": "ex-9",
+      "name": "Standing Dumbbell Lateral Raise",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "description": "Direct lateral head deltoid builder for shoulder width.",
+      "instructions": "Raise dumbbells to shoulder height leading with elbows. Control the eccentric tempo for maximum tension.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/3VcKaXpzqRo?autoplay=1&mute=1&loop=1&playlist=3VcKaXpzqRo&playsinline=1&controls=1&rel=0",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=400&auto=format&fit=crop&q=80",
+      "aiFormCues": [
+        "Slight 10-degree forward hip hinge.",
+        "Lead the movement with elbows slightly higher than wrists (pour the pitcher).",
+        "Keep traps relaxed—do not shrug during elevation."
+      ],
+      "commonMistakes": [
+        "Swinging hips or knees for momentum",
+        "Lifting wrists higher than elbows"
+      ]
+    },
+    {
+      "id": "ex-10",
+      "name": "Hanging Knee/Leg Raise",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "description": "Dynamic abdominal and hip flexor core conditioning.",
+      "instructions": "Hang from pull-up bar, posteriorly tilt pelvis and draw knees up to chest without swinging.",
+      "videoUrl": "https://www.youtube-nocookie.com/embed/hdng3Nm1x_E?autoplay=1&mute=1&loop=1&playlist=hdng3Nm1x_E&playsinline=1&controls=1&rel=0",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&auto=format&fit=crop&q=80",
+      "aiFormCues": [
+        "Posterior pelvic tilt is essential: tuck tailbone before knees elevate.",
+        "Engage lats to stabilize shoulder girdle and eliminate body swing.",
+        "Pause at peak contraction for 1 second."
+      ],
+      "commonMistakes": [
+        "Using swinging hip momentum like a kip",
+        "Failing to posteriorly tilt pelvis, solely engaging hip flexors"
+      ]
+    }
+  ],
+  "workoutPlans": [
+    {
+      "id": "plan-101",
+      "coachId": "usr-coach-1",
+      "coachName": "Alex Morgan, CSCS",
+      "title": "8-Week Hypertrophy & Strength Surge",
+      "description": "Periodized upper/lower split designed for rapid muscle hypertrophy and foundation strength. Features progressive overload tracking.",
+      "difficulty": "INTERMEDIATE",
+      "goal": "Muscle Growth & Strength",
+      "durationWeeks": 8,
+      "isPublished": true,
+      "createdAt": "2026-01-20T10:00:00Z",
+      "updatedAt": "2026-02-01T12:00:00Z",
+      "routines": [
+        {
+          "id": "rout-1",
+          "title": "Upper Body Power & Hypertrophy",
+          "dayNumber": 1,
+          "dayLabel": "Day 1 - Chest, Back & Triceps",
+          "description": "Heavy compound pressing combined with vertical rowing and arm finishing.",
+          "exercises": [
+            {
+              "id": "we-1",
+              "exerciseId": "ex-1",
+              "exerciseName": "Barbell Bench Press",
+              "muscleGroup": "Chest",
+              "sets": 4,
+              "reps": 8,
+              "targetWeightKg": 80,
+              "restSeconds": 90,
+              "notes": "Warm up properly. Aim for RPE 8 on final sets.",
+              "videoUrl": "https://www.youtube-nocookie.com/embed/rT7DgCr-3pg?autoplay=1&mute=1&loop=1&playlist=rT7DgCr-3pg&playsinline=1&controls=1&rel=0"
+            },
+            {
+              "id": "we-2",
+              "exerciseId": "ex-6",
+              "exerciseName": "Lat Pulldown",
+              "muscleGroup": "Back",
+              "sets": 4,
+              "reps": 10,
+              "targetWeightKg": 65,
+              "restSeconds": 75,
+              "notes": "Squeeze shoulder blades together at bottom.",
+              "videoUrl": "https://www.youtube-nocookie.com/embed/CAwf7n6Luuc?autoplay=1&mute=1&loop=1&playlist=CAwf7n6Luuc&playsinline=1&controls=1&rel=0"
+            },
+            {
+              "id": "we-3",
+              "exerciseId": "ex-2",
+              "exerciseName": "Incline Dumbbell Press",
+              "muscleGroup": "Chest",
+              "sets": 3,
+              "reps": 10,
+              "targetWeightKg": 28,
+              "restSeconds": 60,
+              "notes": "Full stretch at bottom.",
+              "videoUrl": "https://www.youtube-nocookie.com/embed/8iPEnn-ltC8?autoplay=1&mute=1&loop=1&playlist=8iPEnn-ltC8&playsinline=1&controls=1&rel=0"
+            },
+            {
+              "id": "we-4",
+              "exerciseId": "ex-3",
+              "exerciseName": "Triceps Rope Pushdown",
+              "muscleGroup": "Arms",
+              "sets": 3,
+              "reps": 12,
+              "targetWeightKg": 25,
+              "restSeconds": 60,
+              "notes": "Lock out elbows and spread rope tips.",
+              "videoUrl": "https://www.youtube-nocookie.com/embed/2-LAMcpzODU?autoplay=1&mute=1&loop=1&playlist=2-LAMcpzODU&playsinline=1&controls=1&rel=0"
+            }
+          ]
+        },
+        {
+          "id": "rout-2",
+          "title": "Lower Body & Core Domination",
+          "dayNumber": 2,
+          "dayLabel": "Day 2 - Quads, Hamstrings & Abs",
+          "description": "Squat pattern focus with heavy posterior chain loading and spinal stabilization.",
+          "exercises": [
+            {
+              "id": "we-5",
+              "exerciseId": "ex-4",
+              "exerciseName": "Barbell Back Squat",
+              "muscleGroup": "Legs",
+              "sets": 4,
+              "reps": 6,
+              "targetWeightKg": 105,
+              "restSeconds": 120,
+              "notes": "Focus on hitting depth with upright torso.",
+              "videoUrl": "https://www.youtube-nocookie.com/embed/bEv6CCg2BC8?autoplay=1&mute=1&loop=1&playlist=bEv6CCg2BC8&playsinline=1&controls=1&rel=0"
+            },
+            {
+              "id": "we-6",
+              "exerciseId": "ex-5",
+              "exerciseName": "Romanian Deadlift (RDL)",
+              "muscleGroup": "Legs",
+              "sets": 4,
+              "reps": 8,
+              "targetWeightKg": 90,
+              "restSeconds": 90,
+              "notes": "Slow 3-second descent, feel deep stretch in hamstrings.",
+              "videoUrl": "https://www.youtube-nocookie.com/embed/op9kVnSso6Q?autoplay=1&mute=1&loop=1&playlist=op9kVnSso6Q&playsinline=1&controls=1&rel=0"
+            },
+            {
+              "id": "we-7",
+              "exerciseId": "ex-10",
+              "exerciseName": "Hanging Knee/Leg Raise",
+              "muscleGroup": "Core",
+              "sets": 3,
+              "reps": 15,
+              "restSeconds": 45,
+              "notes": "Avoid swinging; initiate each rep from abs.",
+              "videoUrl": "https://www.youtube-nocookie.com/embed/hdng3Nm1x_E?autoplay=1&mute=1&loop=1&playlist=hdng3Nm1x_E&playsinline=1&controls=1&rel=0"
+            }
+          ]
+        },
+        {
+          "id": "rout-3",
+          "title": "Shoulders, Back & Arms Conditioning",
+          "dayNumber": 3,
+          "dayLabel": "Day 3 - Delts, Upper Back & Arms",
+          "description": "V-taper construction targeting shoulder caps and back thickness.",
+          "exercises": [
+            {
+              "id": "we-8",
+              "exerciseId": "ex-8",
+              "exerciseName": "Overhead Dumbbell Shoulder Press",
+              "muscleGroup": "Shoulders",
+              "sets": 4,
+              "reps": 10,
+              "targetWeightKg": 22,
+              "restSeconds": 75,
+              "notes": "Strict form, no leg drive.",
+              "videoUrl": "https://www.youtube-nocookie.com/embed/qEwKCR5JCog?autoplay=1&mute=1&loop=1&playlist=qEwKCR5JCog&playsinline=1&controls=1&rel=0"
+            },
+            {
+              "id": "we-9",
+              "exerciseId": "ex-7",
+              "exerciseName": "Barbell Bent-Over Row",
+              "muscleGroup": "Back",
+              "sets": 4,
+              "reps": 8,
+              "targetWeightKg": 70,
+              "restSeconds": 90,
+              "notes": "Keep spine flat, pull to lower ribs.",
+              "videoUrl": "https://www.youtube-nocookie.com/embed/G8l_8chR5BE?autoplay=1&mute=1&loop=1&playlist=G8l_8chR5BE&playsinline=1&controls=1&rel=0"
+            },
+            {
+              "id": "we-10",
+              "exerciseId": "ex-9",
+              "exerciseName": "Standing Dumbbell Lateral Raise",
+              "muscleGroup": "Shoulders",
+              "sets": 4,
+              "reps": 15,
+              "targetWeightKg": 10,
+              "restSeconds": 45,
+              "notes": "Continuous tension, 1 second pause at top.",
+              "videoUrl": "https://www.youtube-nocookie.com/embed/3VcKaXpzqRo?autoplay=1&mute=1&loop=1&playlist=3VcKaXpzqRo&playsinline=1&controls=1&rel=0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan-102",
+      "coachId": "usr-coach-2",
+      "coachName": "Elena Vance, CPT",
+      "title": "Functional Mobility & Metabolic Conditioning",
+      "description": "Dynamic athletic conditioning plan emphasizing joint longevity, core rotational power, and fat oxidation.",
+      "difficulty": "BEGINNER",
+      "goal": "Endurance & Mobility",
+      "durationWeeks": 6,
+      "isPublished": true,
+      "createdAt": "2026-01-25T14:00:00Z",
+      "updatedAt": "2026-02-05T11:00:00Z",
+      "routines": [
+        {
+          "id": "rout-201",
+          "title": "Metabolic Full-Body Circuit",
+          "dayNumber": 1,
+          "dayLabel": "Day 1 - Total Body Tone",
+          "description": "High-density workout combining squatting, pulling, and core intervals.",
+          "exercises": [
+            {
+              "id": "we-201",
+              "exerciseId": "ex-4",
+              "exerciseName": "Barbell Back Squat",
+              "muscleGroup": "Legs",
+              "sets": 3,
+              "reps": 12,
+              "targetWeightKg": 60,
+              "restSeconds": 60,
+              "notes": "Controlled tempo, focus on fluid rhythm.",
+              "videoUrl": "https://www.youtube-nocookie.com/embed/bEv6CCg2BC8?autoplay=1&mute=1&loop=1&playlist=bEv6CCg2BC8&playsinline=1&controls=1&rel=0"
+            },
+            {
+              "id": "we-202",
+              "exerciseId": "ex-6",
+              "exerciseName": "Lat Pulldown",
+              "muscleGroup": "Back",
+              "sets": 3,
+              "reps": 12,
+              "targetWeightKg": 45,
+              "restSeconds": 60,
+              "videoUrl": "https://www.youtube-nocookie.com/embed/CAwf7n6Luuc?autoplay=1&mute=1&loop=1&playlist=CAwf7n6Luuc&playsinline=1&controls=1&rel=0"
+            },
+            {
+              "id": "we-203",
+              "exerciseId": "ex-10",
+              "exerciseName": "Hanging Knee/Leg Raise",
+              "muscleGroup": "Core",
+              "sets": 3,
+              "reps": 12,
+              "restSeconds": 45,
+              "videoUrl": "https://www.youtube-nocookie.com/embed/hdng3Nm1x_E?autoplay=1&mute=1&loop=1&playlist=hdng3Nm1x_E&playsinline=1&controls=1&rel=0"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "workoutAssignments": [
+    {
+      "id": "asg-1",
+      "userId": "usr-athlete-1",
+      "userName": "Marcus Chen",
+      "planId": "plan-101",
+      "planTitle": "8-Week Hypertrophy & Strength Surge",
+      "coachId": "usr-coach-1",
+      "assignedAt": "2026-01-22T08:00:00Z",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "asg-2",
+      "userId": "usr-athlete-2",
+      "userName": "Sarah Jenkins",
+      "planId": "plan-102",
+      "planTitle": "Functional Mobility & Metabolic Conditioning",
+      "coachId": "usr-coach-2",
+      "assignedAt": "2026-01-26T09:00:00Z",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "asg-3",
+      "userId": "usr-athlete-3",
+      "userName": "David Rodriguez",
+      "planId": "plan-101",
+      "planTitle": "8-Week Hypertrophy & Strength Surge",
+      "coachId": "usr-coach-1",
+      "assignedAt": "2026-02-02T10:00:00Z",
+      "status": "ACTIVE"
+    }
+  ],
+  "workoutLogs": [
+    {
+      "id": "log-1",
+      "userId": "usr-athlete-1",
+      "planId": "plan-101",
+      "routineId": "rout-1",
+      "routineTitle": "Upper Body Power & Hypertrophy",
+      "completedAt": "2026-02-02T18:30:00Z",
+      "durationMinutes": 52,
+      "caloriesBurned": 420,
+      "perceivedEffort": 8,
+      "notes": "Felt very explosive on the bench press. Hit all reps cleanly.",
+      "exerciseLogs": [
+        {
+          "exerciseId": "ex-1",
+          "exerciseName": "Barbell Bench Press",
+          "setNumber": 1,
+          "repsCompleted": 8,
+          "weightUsedKg": 80
+        },
+        {
+          "exerciseId": "ex-1",
+          "exerciseName": "Barbell Bench Press",
+          "setNumber": 2,
+          "repsCompleted": 8,
+          "weightUsedKg": 80
+        },
+        {
+          "exerciseId": "ex-1",
+          "exerciseName": "Barbell Bench Press",
+          "setNumber": 3,
+          "repsCompleted": 8,
+          "weightUsedKg": 80
+        },
+        {
+          "exerciseId": "ex-1",
+          "exerciseName": "Barbell Bench Press",
+          "setNumber": 4,
+          "repsCompleted": 7,
+          "weightUsedKg": 80
+        },
+        {
+          "exerciseId": "ex-6",
+          "exerciseName": "Lat Pulldown",
+          "setNumber": 1,
+          "repsCompleted": 10,
+          "weightUsedKg": 65
+        },
+        {
+          "exerciseId": "ex-6",
+          "exerciseName": "Lat Pulldown",
+          "setNumber": 2,
+          "repsCompleted": 10,
+          "weightUsedKg": 65
+        },
+        {
+          "exerciseId": "ex-6",
+          "exerciseName": "Lat Pulldown",
+          "setNumber": 3,
+          "repsCompleted": 10,
+          "weightUsedKg": 65
+        },
+        {
+          "exerciseId": "ex-6",
+          "exerciseName": "Lat Pulldown",
+          "setNumber": 4,
+          "repsCompleted": 9,
+          "weightUsedKg": 65
+        }
+      ]
+    },
+    {
+      "id": "log-2",
+      "userId": "usr-athlete-1",
+      "planId": "plan-101",
+      "routineId": "rout-2",
+      "routineTitle": "Lower Body & Core Domination",
+      "completedAt": "2026-02-04T19:00:00Z",
+      "durationMinutes": 58,
+      "caloriesBurned": 480,
+      "perceivedEffort": 9,
+      "notes": "Heavy squats. Kept rest times strictly under 2 minutes.",
+      "exerciseLogs": [
+        {
+          "exerciseId": "ex-4",
+          "exerciseName": "Barbell Back Squat",
+          "setNumber": 1,
+          "repsCompleted": 6,
+          "weightUsedKg": 105
+        },
+        {
+          "exerciseId": "ex-4",
+          "exerciseName": "Barbell Back Squat",
+          "setNumber": 2,
+          "repsCompleted": 6,
+          "weightUsedKg": 105
+        },
+        {
+          "exerciseId": "ex-4",
+          "exerciseName": "Barbell Back Squat",
+          "setNumber": 3,
+          "repsCompleted": 6,
+          "weightUsedKg": 105
+        },
+        {
+          "exerciseId": "ex-4",
+          "exerciseName": "Barbell Back Squat",
+          "setNumber": 4,
+          "repsCompleted": 6,
+          "weightUsedKg": 105
+        }
+      ]
+    },
+    {
+      "id": "log-3",
+      "userId": "usr-athlete-1",
+      "planId": "plan-101",
+      "routineId": "rout-3",
+      "routineTitle": "Shoulders, Back & Arms Conditioning",
+      "completedAt": "2026-02-06T17:45:00Z",
+      "durationMinutes": 46,
+      "caloriesBurned": 380,
+      "perceivedEffort": 7,
+      "notes": "Pump was incredible. Shoulder health feels rock solid.",
+      "exerciseLogs": [
+        {
+          "exerciseId": "ex-8",
+          "exerciseName": "Overhead Dumbbell Shoulder Press",
+          "setNumber": 1,
+          "repsCompleted": 10,
+          "weightUsedKg": 22
+        },
+        {
+          "exerciseId": "ex-8",
+          "exerciseName": "Overhead Dumbbell Shoulder Press",
+          "setNumber": 2,
+          "repsCompleted": 10,
+          "weightUsedKg": 22
+        }
+      ]
+    },
+    {
+      "id": "log-4",
+      "userId": "usr-athlete-2",
+      "planId": "plan-102",
+      "routineId": "rout-201",
+      "routineTitle": "Metabolic Full-Body Circuit",
+      "completedAt": "2026-02-05T08:15:00Z",
+      "durationMinutes": 40,
+      "caloriesBurned": 350,
+      "perceivedEffort": 8,
+      "notes": "High heart rate throughout. Really enjoyed the circuit pace.",
+      "exerciseLogs": [
+        {
+          "exerciseId": "ex-4",
+          "exerciseName": "Barbell Back Squat",
+          "setNumber": 1,
+          "repsCompleted": 12,
+          "weightUsedKg": 55
+        }
+      ]
+    }
+  ],
+  "progressRecords": [
+    {
+      "id": "prog-1",
+      "userId": "usr-athlete-1",
+      "date": "2026-01-15",
+      "weightKg": 79.5,
+      "bodyFatPercentage": 15.2,
+      "chestCm": 101,
+      "waistCm": 84,
+      "armsCm": 37,
+      "notes": "Starting assessment baseline"
+    },
+    {
+      "id": "prog-2",
+      "userId": "usr-athlete-1",
+      "date": "2026-01-22",
+      "weightKg": 80,
+      "bodyFatPercentage": 15,
+      "chestCm": 101.5,
+      "waistCm": 83.5,
+      "armsCm": 37.2,
+      "notes": "Feeling energized, appetite up"
+    },
+    {
+      "id": "prog-3",
+      "userId": "usr-athlete-1",
+      "date": "2026-01-29",
+      "weightKg": 80.8,
+      "bodyFatPercentage": 14.8,
+      "chestCm": 102,
+      "waistCm": 83,
+      "armsCm": 37.6,
+      "notes": "Noticeable strength progression"
+    },
+    {
+      "id": "prog-4",
+      "userId": "usr-athlete-1",
+      "date": "2026-02-05",
+      "weightKg": 81.5,
+      "bodyFatPercentage": 14.5,
+      "chestCm": 103,
+      "waistCm": 82.5,
+      "armsCm": 38,
+      "notes": "Surpassed 81kg milestone with tighter waist"
+    },
+    {
+      "id": "prog-5",
+      "userId": "usr-athlete-2",
+      "date": "2026-01-18",
+      "weightKg": 63.5,
+      "bodyFatPercentage": 23,
+      "chestCm": 88,
+      "waistCm": 72,
+      "hipsCm": 96,
+      "notes": "Baseline check"
+    },
+    {
+      "id": "prog-6",
+      "userId": "usr-athlete-2",
+      "date": "2026-02-01",
+      "weightKg": 62,
+      "bodyFatPercentage": 22.2,
+      "chestCm": 87.5,
+      "waistCm": 70.5,
+      "hipsCm": 95,
+      "notes": "Good fat loss and recovery"
+    }
+  ],
+  "bmiRecords": [
+    {
+      "id": "bmi-1",
+      "userId": "usr-athlete-1",
+      "date": "2026-01-15",
+      "heightCm": 182,
+      "weightKg": 79.5,
+      "bmiValue": 24,
+      "category": "Normal weight",
+      "healthRisk": "Low health risk. Optimal range for athletic progression."
+    },
+    {
+      "id": "bmi-2",
+      "userId": "usr-athlete-1",
+      "date": "2026-02-05",
+      "heightCm": 182,
+      "weightKg": 81.5,
+      "bmiValue": 24.6,
+      "category": "Normal weight",
+      "healthRisk": "Healthy weight with high proportion of lean muscle mass."
+    },
+    {
+      "id": "bmi-3",
+      "userId": "usr-athlete-2",
+      "date": "2026-01-18",
+      "heightCm": 168,
+      "weightKg": 63.5,
+      "bmiValue": 22.5,
+      "category": "Normal weight",
+      "healthRisk": "Low risk. Excellent cardiovascular endurance baseline."
+    },
+    {
+      "id": "bmi-4",
+      "userId": "usr-athlete-3",
+      "date": "2026-02-01",
+      "heightCm": 175,
+      "weightKg": 89.2,
+      "bmiValue": 29.1,
+      "category": "Overweight",
+      "healthRisk": "Elevated risk. Recommended caloric deficit with progressive resistance."
+    },
+    {
+      "id": "bmi-1791612424030",
+      "userId": "usr-athlete-1",
+      "date": "2026-10-10",
+      "heightCm": 178,
+      "weightKg": 78,
+      "bmiValue": 24.6,
+      "category": "Normal weight",
+      "healthRisk": "Optimal healthy weight. Maintain progressive resistance training."
+    }
+  ],
+  "nutritionLogs": [
+    {
+      "id": "nut-1",
+      "userId": "usr-athlete-1",
+      "date": "2026-02-06",
+      "mealType": "BREAKFAST",
+      "foodName": "Oatmeal with Whey Protein & Blueberries",
+      "calories": 520,
+      "proteinG": 42,
+      "carbsG": 68,
+      "fatG": 9,
+      "portionSize": "1 large bowl (350g)"
+    },
+    {
+      "id": "nut-2",
+      "userId": "usr-athlete-1",
+      "date": "2026-02-06",
+      "mealType": "LUNCH",
+      "foodName": "Grilled Chicken Breast, Brown Rice & Broccoli",
+      "calories": 680,
+      "proteinG": 55,
+      "carbsG": 75,
+      "fatG": 14,
+      "portionSize": "Plate (400g)"
+    },
+    {
+      "id": "nut-3",
+      "userId": "usr-athlete-1",
+      "date": "2026-02-06",
+      "mealType": "SNACK",
+      "foodName": "Greek Yogurt with Almonds & Honey",
+      "calories": 310,
+      "proteinG": 24,
+      "carbsG": 22,
+      "fatG": 12,
+      "portionSize": "1 cup"
+    },
+    {
+      "id": "nut-4",
+      "userId": "usr-athlete-1",
+      "date": "2026-02-06",
+      "mealType": "DINNER",
+      "foodName": "Wild Salmon Fillet, Sweet Potato & Asparagus",
+      "calories": 640,
+      "proteinG": 48,
+      "carbsG": 52,
+      "fatG": 24,
+      "portionSize": "Fillet + sides (380g)"
+    },
+    {
+      "id": "nut-5",
+      "userId": "usr-athlete-1",
+      "date": "2026-02-05",
+      "mealType": "BREAKFAST",
+      "foodName": "Scrambled Eggs with Avocado & Sourdough Toast",
+      "calories": 560,
+      "proteinG": 34,
+      "carbsG": 45,
+      "fatG": 26,
+      "portionSize": "3 eggs + 2 slices"
+    },
+    {
+      "id": "nut-6",
+      "userId": "usr-athlete-1",
+      "date": "2026-02-05",
+      "mealType": "LUNCH",
+      "foodName": "Lean Beef Burrito Bowl with Black Beans & Rice",
+      "calories": 740,
+      "proteinG": 52,
+      "carbsG": 82,
+      "fatG": 20,
+      "portionSize": "Bowl (450g)"
+    },
+    {
+      "id": "nut-7",
+      "userId": "usr-athlete-1",
+      "date": "2026-02-05",
+      "mealType": "DINNER",
+      "foodName": "Baked Cod, Quinoa & Steamed Green Beans",
+      "calories": 510,
+      "proteinG": 45,
+      "carbsG": 48,
+      "fatG": 11,
+      "portionSize": "1 plate"
+    },
+    {
+      "id": "nut-1791611156863",
+      "userId": "usr-athlete-1",
+      "date": "2026-10-10",
+      "mealType": "LUNCH",
+      "foodName": "Whole Wheat Roti",
+      "calories": 210,
+      "proteinG": 6,
+      "carbsG": 42,
+      "fatG": 2,
+      "portionSize": "2 rotis (approx 64g total)"
+    },
+    {
+      "id": "nut-1791611262245",
+      "userId": "usr-athlete-1",
+      "date": "2026-10-10",
+      "mealType": "LUNCH",
+      "foodName": "Peanut Oat Banana Power Bowl",
+      "calories": 1385,
+      "proteinG": 45.5,
+      "carbsG": 148.2,
+      "fatG": 71.8,
+      "portionSize": "Large Bowl"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-1",
+      "senderId": "usr-coach-1",
+      "senderName": "Alex Morgan, CSCS",
+      "senderRole": "COACH",
+      "receiverId": "usr-athlete-1",
+      "receiverName": "Marcus Chen",
+      "content": "Hey Marcus! I reviewed your bench press logs from Monday. Great job maintaining bar speed at 80kg.",
+      "createdAt": "2026-02-03T10:15:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-2",
+      "senderId": "usr-athlete-1",
+      "senderName": "Marcus Chen",
+      "senderRole": "USER",
+      "receiverId": "usr-coach-1",
+      "receiverName": "Alex Morgan, CSCS",
+      "content": "Thanks Coach Alex! My triceps felt tired on the final set. Should I keep the weight at 80kg next week or try 82.5kg?",
+      "createdAt": "2026-02-03T11:20:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-3",
+      "senderId": "usr-coach-1",
+      "senderName": "Alex Morgan, CSCS",
+      "senderRole": "COACH",
+      "receiverId": "usr-athlete-1",
+      "receiverName": "Marcus Chen",
+      "content": "Bump it to 82.5kg for the first two sets! If you hit 8 clean reps, keep it there. Also ensure you are getting at least 160g protein daily.",
+      "createdAt": "2026-02-03T14:40:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-4",
+      "senderId": "usr-athlete-1",
+      "senderName": "Marcus Chen",
+      "senderRole": "USER",
+      "receiverId": "usr-coach-1",
+      "receiverName": "Alex Morgan, CSCS",
+      "content": "Understood! I tracked all my meals today in the nutrition dashboard. Hit 169g protein.",
+      "createdAt": "2026-02-06T20:10:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5",
+      "senderId": "usr-athlete-2",
+      "senderName": "Sarah Jenkins",
+      "senderRole": "USER",
+      "receiverId": "usr-coach-2",
+      "receiverName": "Elena Vance, CPT",
+      "content": "Coach Elena, the mobility circuit really helped my hip stiffness after yesterday’s long run!",
+      "createdAt": "2026-02-05T15:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-6",
+      "senderId": "usr-coach-2",
+      "senderName": "Elena Vance, CPT",
+      "senderRole": "COACH",
+      "receiverId": "usr-athlete-2",
+      "receiverName": "Sarah Jenkins",
+      "content": "That is wonderful news Sarah! Keep up with the post-run glute bridges and hamstring flossing.",
+      "createdAt": "2026-02-05T16:30:00Z",
+      "isRead": true
+    }
+  ],
+  "feedback": [
+    {
+      "id": "fb-1",
+      "userId": "usr-athlete-1",
+      "userName": "Marcus Chen",
+      "userEmail": "marcus@pulsefit.com",
+      "category": "COACHING",
+      "rating": 5,
+      "comment": "Coach Alex has transformed how I approach progressive overload. The workout builder and set tracker are super smooth!",
+      "status": "REVIEWED",
+      "createdAt": "2026-02-01T14:00:00Z"
+    },
+    {
+      "id": "fb-2",
+      "userId": "usr-athlete-2",
+      "userName": "Sarah Jenkins",
+      "userEmail": "sarah@pulsefit.com",
+      "category": "APP_FEATURES",
+      "rating": 5,
+      "comment": "The BMI and nutrition breakdown with macro graphs makes tracking my daily fueling effortless.",
+      "status": "RESOLVED",
+      "createdAt": "2026-02-03T09:12:00Z"
+    },
+    {
+      "id": "fb-3",
+      "userId": "usr-athlete-3",
+      "userName": "David Rodriguez",
+      "userEmail": "david@pulsefit.com",
+      "category": "WORKOUT_CONTENT",
+      "rating": 4,
+      "comment": "Would love even more video form cues for complex barbell movements like Romanian Deadlifts.",
+      "status": "PENDING",
+      "createdAt": "2026-02-06T11:45:00Z"
+    }
+  ],
+  "contentSubmissions": [
+    {
+      "id": "cnt-1",
+      "title": "How to Break Through a Bench Press Plateau in 4 Weeks",
+      "type": "FITNESS_GUIDE",
+      "authorId": "usr-coach-1",
+      "authorName": "Alex Morgan, CSCS",
+      "authorRole": "COACH",
+      "content": "Plateaus occur when neurological adaptation stalls or volume exceeds recovery capacity. Here is the 3-step microcycle adjustment you should apply...",
+      "imageUrl": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=600&auto=format&fit=crop&q=80",
+      "status": "APPROVED",
+      "moderationNotes": "Approved by Admin Jane. Excellent technical guide for members.",
+      "submittedAt": "2026-01-28T10:00:00Z",
+      "reviewedAt": "2026-01-29T11:00:00Z",
+      "reviewerName": "Jane Sterling"
+    },
+    {
+      "id": "cnt-2",
+      "title": "High Protein Post-Workout Chia Seed Parfait Recipe",
+      "type": "RECIPE",
+      "authorId": "usr-coach-2",
+      "authorName": "Elena Vance, CPT",
+      "authorRole": "COACH",
+      "content": "Ingredients: 35g Vanilla isolate, 150g low-fat Greek yogurt, 2 tbsp chia seeds, unsweetened almond milk. 38g protein, 310 calories.",
+      "imageUrl": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&auto=format&fit=crop&q=80",
+      "status": "APPROVED",
+      "moderationNotes": "Verified nutritional facts.",
+      "submittedAt": "2026-02-02T13:30:00Z",
+      "reviewedAt": "2026-02-02T16:00:00Z",
+      "reviewerName": "Jane Sterling"
+    },
+    {
+      "id": "cnt-3",
+      "title": "My 12-Week Transformation: Down 8kg, Up 20kg on Squat!",
+      "type": "TRANSFORMATION",
+      "authorId": "usr-athlete-1",
+      "authorName": "Marcus Chen",
+      "authorRole": "USER",
+      "content": "Huge shoutout to the PulseFit platform and coach Alex. Following the 8-Week surge plan gave me discipline and measurable results.",
+      "imageUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&auto=format&fit=crop&q=80",
+      "status": "PENDING",
+      "moderationNotes": "Awaiting admin review for community guidelines compliance.",
+      "submittedAt": "2026-02-06T15:20:00Z"
+    }
+  ],
+  "settings": {
+    "platformName": "PulseFit Coaching SaaS",
+    "allowNewRegistrations": true,
+    "maintenanceMode": false,
+    "emailAlertsEnabled": true,
+    "welcomeMessage": "Welcome to PulseFit! Unleash your peak physical potential with dedicated coaching.",
+    "supportEmail": "support@pulsefit.com",
+    "requireContentModeration": true,
+    "defaultPlanDurationWeeks": 8
+  },
+  "fitnessGoals": [
+    {
+      "id": "goal-weight-1",
+      "userId": "usr-athlete-1",
+      "type": "WEIGHT",
+      "title": "Target Body Weight",
+      "startValue": 78,
+      "currentValue": 81.5,
+      "targetValue": 85,
+      "unit": "kg",
+      "targetDate": "2026-11-30",
+      "status": "IN_PROGRESS",
+      "notes": "Lean hypertrophy surplus: Reach 85kg with controlled caloric surplus and high protein intake.",
+      "createdAt": "2026-09-01T10:00:00Z",
+      "updatedAt": "2026-10-10T12:00:00Z"
+    },
+    {
+      "id": "goal-strength-1",
+      "userId": "usr-athlete-1",
+      "type": "STRENGTH",
+      "title": "Barbell Bench Press",
+      "exerciseName": "Barbell Bench Press",
+      "category": "CHEST",
+      "startValue": 80,
+      "currentValue": 92.5,
+      "targetValue": 100,
+      "targetReps": 5,
+      "unit": "kg",
+      "targetDate": "2026-11-15",
+      "status": "IN_PROGRESS",
+      "notes": "Hit 100kg for 5 working reps with solid 1s chest pause and retracted scapula.",
+      "createdAt": "2026-09-05T11:00:00Z",
+      "updatedAt": "2026-10-08T14:30:00Z"
+    },
+    {
+      "id": "goal-strength-2",
+      "userId": "usr-athlete-1",
+      "type": "STRENGTH",
+      "title": "Barbell Back Squat",
+      "exerciseName": "Barbell Back Squat",
+      "category": "LEGS",
+      "startValue": 100,
+      "currentValue": 125,
+      "targetValue": 140,
+      "targetReps": 3,
+      "unit": "kg",
+      "targetDate": "2026-12-05",
+      "status": "IN_PROGRESS",
+      "notes": "Deep hip hinge below parallel, knees tracked over toes, explosive drive out of the hole.",
+      "createdAt": "2026-09-08T09:15:00Z",
+      "updatedAt": "2026-10-09T18:00:00Z"
+    },
+    {
+      "id": "goal-strength-3",
+      "userId": "usr-athlete-1",
+      "type": "STRENGTH",
+      "title": "Conventional Deadlift",
+      "exerciseName": "Deadlift",
+      "category": "BACK",
+      "startValue": 130,
+      "currentValue": 160,
+      "targetValue": 180,
+      "targetReps": 1,
+      "unit": "kg",
+      "targetDate": "2026-12-20",
+      "status": "IN_PROGRESS",
+      "notes": "Single rep max (1RM) test. Tight lats, slack pulled from the bar before leg drive.",
+      "createdAt": "2026-09-10T15:00:00Z",
+      "updatedAt": "2026-10-07T16:20:00Z"
+    },
+    {
+      "id": "goal-strength-4",
+      "userId": "usr-athlete-1",
+      "type": "STRENGTH",
+      "title": "Standing Overhead Press",
+      "exerciseName": "Standing Overhead Press",
+      "category": "SHOULDERS",
+      "startValue": 50,
+      "currentValue": 65,
+      "targetValue": 65,
+      "targetReps": 5,
+      "unit": "kg",
+      "targetDate": "2026-10-05",
+      "status": "COMPLETED",
+      "completedAt": "2026-10-05T17:45:00Z",
+      "notes": "Goal unlocked! 65kg strict overhead press for 5 reps with complete lockout.",
+      "createdAt": "2026-08-15T08:00:00Z",
+      "updatedAt": "2026-10-05T17:45:00Z"
+    },
+    {
+      "id": "goal-weight-2",
+      "userId": "usr-athlete-2",
+      "type": "WEIGHT",
+      "title": "Target Body Weight",
+      "startValue": 65,
+      "currentValue": 62,
+      "targetValue": 60,
+      "unit": "kg",
+      "targetDate": "2026-11-20",
+      "status": "IN_PROGRESS",
+      "notes": "Cutting for endurance marathon race weight.",
+      "createdAt": "2026-09-01T10:00:00Z",
+      "updatedAt": "2026-10-06T12:00:00Z"
+    }
+  ]
+}
