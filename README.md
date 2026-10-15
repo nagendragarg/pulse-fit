@@ -4,43 +4,43 @@ PulseFit is a full-stack, commercial-grade SaaS platform engineered for personal
 
 ---
 
-## 🌟 Core Features & Modules
+##  Core Features & Modules
 
-### 1. 🛡️ Role-Based Access Control (RBAC)
+### 1.  Role-Based Access Control (RBAC)
 - **ADMIN**: Platform overview, user account management (activate/deactivate, role promotion, account deletion), content moderation queue, feedback reviews, and global system configuration.
 - **COACH**: Dedicated dashboard, athlete roster oversight, custom Workout Plan Builder (multi-day routines, exercises, target sets, reps, weights, rest intervals), direct messaging, and plan effectiveness analytics.
 - **USER (Athlete)**: Live workout session runner with set-by-set logging and rest interval countdown, workout history, body weight & circumference progress tracker, WHO BMI calculator & health gauge, and macronutrient logging (breakfast, lunch, dinner, snacks).
 
-### 2. 🏋️‍♂️ Interactive Workout Experience
+### 2.  Interactive Workout Experience
 - Live session runner with real-time checkbox set completion
 - Rest interval timer with visual and audio countdown cues
 - Perceived effort (RPE 1-10) scoring and post-session athlete notes
 - Confetti celebration upon session completion
 - Automatic synchronization with athlete's workout history and coach dashboard
 
-### 3. ⚖️ Precision BMI Calculator & Biometric Tracker
+### 3.  Precision BMI Calculator & Biometric Tracker
 - Live BMI computation according to WHO standard classifications (Underweight, Normal, Overweight, Obese)
 - Visual colored meter gauge and healthy target weight benchmark
 - Save reading directly to health profile and historical timeline
 - Track weight and circumference metrics (chest, waist, arms, hips) over weeks
 
-### 4. 🥗 Nutritional & Macronutrient Analytics
+### 4.  Nutritional & Macronutrient Analytics
 - Dynamic daily calorie targets based on athlete goal (Hypertrophy, Fat Loss, Endurance)
 - Real-time macro breakdown (Protein, Carbohydrates, Dietary Fats) in grams and percentages
 - Meal logger by category (Breakfast, Lunch, Dinner, Snacks) with portion sizes
 - 7-day intake trend visualization via Recharts
 
-### 5. 💬 Real-Time Messaging & Direct Coach Interaction
+### 5.  Real-Time Messaging & Direct Coach Interaction
 - Persistent database chat conversations between athletes and coaches
 - Unread message counters, timestamps, and conversation threads
 
-### 6. 🛡️ Content Moderation & Community Guidelines
+### 6.  Content Moderation & Community Guidelines
 - User-generated transformations, training tips, and recipe guides
 - Dedicated admin approval/rejection queue with moderator notes
 
 ---
 
-## 🚀 Demo Credentials
+##  Demo Credentials
 
 The platform is pre-seeded with realistic production data. You can log in using these accounts or use the **1-Click Quick Role Switcher** in the navigation bar:
 
@@ -55,7 +55,7 @@ The platform is pre-seeded with realistic production data. You can log in using 
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 - **Frontend**: React 19, TypeScript, Tailwind CSS, Lucide Icons, Recharts, Canvas-Confetti
 - **Backend**: Node.js, Express, TypeScript, tsx
@@ -65,7 +65,7 @@ The platform is pre-seeded with realistic production data. You can log in using 
 
 ---
 
-## 🔌 API Overview
+##  API Overview
 
 ### Authentication & Profiles
 - `POST /api/auth/login` — Sign in and issue JWT token
@@ -109,7 +109,7 @@ The platform is pre-seeded with realistic production data. You can log in using 
 
 ---
 
-## 💻 Development & Production Commands
+##  Development & Production Commands
 
 ```bash
 # Start development server (Full-stack Express + Vite on port 3000)
